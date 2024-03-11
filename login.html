@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./mystyle/register_login.css">
+</head>
+<body style="background-color: rgb(176, 241, 241);">
+    <div class="login-container">
+        <div class="">
+          <h1 class="title mt-5">Please Login</h1>
+          <p id="error" style="color: red; background-color:aqua; font-weight:bold; font-size:20px"></p>
+          <form action="">
+            <input
+              value=""
+              id="login-username"
+              type="text"
+              class="input"
+              placeholder="username"
+              required
+            />
+            <input
+              id="login-password"
+              type="password"
+              class="input"
+              placeholder="password"
+              required
+              value=""
+            />
+            <button onclick="userLogin(event)" class="submit-btn-login">
+              Login
+            </button>
+            <p><a href="signup.html">i have no account</a></p>
+          </form>
+        </div>
+      </div>
+      <script src="./Fetching_file/auth.js"></script>
+</body>
+</html>

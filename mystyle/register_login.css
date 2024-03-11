@@ -1,0 +1,55 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+}
+.input {
+  padding: 15px 25px;
+  border: none;
+  margin: 10px;
+  box-shadow: 4px 4px 8px gray;
+  border-radius: 5px;
+}
+.submit-btn {
+  padding: 15px 25px;
+  width: 85%;
+  margin: auto;
+  border: none;
+  background-color: rgb(43, 121, 121);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.submit-btn-login {
+  padding: 15px 16px;
+  width: 85%;
+  margin: auto;
+  border: none;
+  background-color: rgb(43, 121, 121);
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.comment-container {
+  width: 50%;
+  text-align: center;
+  margin-left: 125px;
+}
+
+#Fashion,
+#Electronic,
+#Jewellery,
+#Log_Out ,
+#profile{
+  display: none;
+}
+
+
+#Sign_Up,#Login {
+  display: block;
+}
