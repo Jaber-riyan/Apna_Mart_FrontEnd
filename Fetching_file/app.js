@@ -1,5 +1,5 @@
 const loadFashionProduct = () => {
-    fetch(`http://127.0.0.1:8000/products/list/?category_id=2/`)
+    fetch(`https://apna-fashion-mart.onrender.com/products/list/?category_id=2/`)
         .then(res => res.json())
         .then(data => {
             const parent = document.getElementById("fashion-container")
@@ -24,7 +24,7 @@ const loadFashionProduct = () => {
         })
 }
 const loadElectronisProduct = () => {
-    fetch(`http://127.0.0.1:8000/products/list/?category_id=3/`)
+    fetch(`https://apna-fashion-mart.onrender.com/products/list/?category_id=3/`)
         .then(res => res.json())
         .then(data => {
             const parent = document.getElementById("electronics-container")
@@ -49,7 +49,7 @@ const loadElectronisProduct = () => {
         })
 }
 const loadJewelleryProduct = () => {
-    fetch(`http://127.0.0.1:8000/products/list/?category_id=4/`)
+    fetch(`https://apna-fashion-mart.onrender.com/products/list/?category_id=4/`)
         .then(res => res.json())
         .then(data => {
             const parent = document.getElementById("jewellery-container")

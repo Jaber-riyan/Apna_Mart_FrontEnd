@@ -24,7 +24,7 @@ const userRegistration = (event) => {
         ) {
             console.log(info);
 
-            fetch("http://127.0.0.1:8000/user/register/", {
+            fetch("https://apna-fashion-mart.onrender.com/user/register/", {
                 method: "POST",
                 headers: { "content-type": "application/json" },
                 body: JSON.stringify(info),
@@ -57,7 +57,7 @@ const userLogin = (event) => {
     console.log(username, password);
     if ((username, password)) {
         console.log(username, password);
-        fetch("http://127.0.0.1:8000/user/login/", {
+        fetch("https://apna-fashion-mart.onrender.com/user/login/", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ username, password }),
@@ -83,7 +83,7 @@ const userLogin = (event) => {
 const userlogOut = () => {
     const token = localStorage.getItem("token");
 
-    fetch("http://127.0.0.1:8000/user/logout/", {
+    fetch("https://apna-fashion-mart.onrender.com/user/logout/", {
         method: "POST",
         headers: {
             Authorization: `Token ${token}`,
@@ -105,7 +105,7 @@ const userlogOut = () => {
 const userProfile = () => {
     const user_id = localStorage.getItem("user_id");
     const parent = document.getElementById('user_profile')
-    fetch(`http://127.0.0.1:8000/user/list/${user_id}/`)
+    fetch(`https://apna-fashion-mart.onrender.com/user/list/${user_id}/`)
         .then(res => res.json())
         .then(data => {
             console.log(data);
